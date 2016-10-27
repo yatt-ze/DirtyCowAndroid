@@ -14,7 +14,7 @@ root: push	#http://androidforums.com/threads/revised-procedure-for-persistent-ro
 	adb shell 'chmod 777 /data/local/tmp/run-as'
 	adb shell '/data/local/tmp/dirtycow /system/bin/run-as /data/local/tmp/run-as'
 	adb shell /system/bin/run-as
-	adb shell mount -o remount,rw -t ext3 /dev/mmcblk0p12 /system
+	adb shell mount -o remount,rw -t ext3 /dev/mmcblk0p12 /system #Persistent Root Method Start
 	adb shell cd /system/bin
 	adb shell cat /data/local/temp/su > su
 	adb shell cat /data/local/temp/busybox > busybox
