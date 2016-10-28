@@ -7,24 +7,25 @@ build:
 push: build
 	adb push libs/armeabi/dirtycow /data/local/tmp/dirtycow
 	adb push libs/armeabi/run-as /data/local/tmp/run-as
-	adb push su /data/local/temp
-	adb push busybox /data/local/temp
+	adb push su /data/local/tmp/su
+	adb push busybox /data/local/tmp/busybox
+	adb push rageagainstthecage-arm5.bin /data/local/tmp/rage
 
-root: push	#http://androidforums.com/threads/revised-procedure-for-persistent-root.344510/
+root: push	
 	adb shell 'chmod 777 /data/local/tmp/run-as'
 	adb shell '/data/local/tmp/dirtycow /system/bin/run-as /data/local/tmp/run-as'
 	adb shell /system/bin/run-as
-	adb shell mount -o remount,rw -t ext3 /dev/mmcblk0p12 /system #Persistent Root Method Start
+	adb shell mount -o remount,rw -t ext3 /dev/mmcblk0p12 /system
 	adb shell cd /system/bin
-	adb shell cat /data/local/temp/su > su
-	adb shell cat /data/local/temp/busybox > busybox
+	adb shell cat /data/local/tmp/su > su
+	adb shell cat /data/local/tmp/busybox > busybox
 	adb shell chmod 4755 su
 	adb shell chmod 4755 busybox
 
 clean:
 	rm -rf libs
 	rm -rf obj
-	adb shell rm /data/local/temp/su
-	adb shell rm /data/local/temp/busybox
-	adb shell rm /data/local/temp/rage
+	adb shell rm /data/local/tmp/su
+	adb shell rm /data/local/tmp/busybox
+	adb shell rm /data/local/tmp/rage
 	adb shell reboot
