@@ -27,5 +27,4 @@ adb shell /system/bin/run-as
 running as uid 2000    
 uid 0    
     
-!!!WARNING HAS NOT BEEN TESTED USE AT OWN RISK!!!     
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
