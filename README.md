@@ -19,4 +19,10 @@ uid 0
 root@ZTE-V811:/ #
   
 Tested On Android Kitkat 4.4  
+Knowen Bug:  
+System Will Hang If You Exec a command on spawned shell  
+Temp Fix: Exit Back to Terminal and type  
+1) adb shell  
+2) run-as  
+Going adb shell run-as will produce the hang  
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
