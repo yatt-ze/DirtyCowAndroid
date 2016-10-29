@@ -7,9 +7,6 @@ build:
 push: build
 	adb push libs/armeabi/dirtycow /data/local/tmp/dirtycow
 	adb push libs/armeabi/run-as /data/local/tmp/run-as
-	adb push su /data/local/tmp/su
-	adb push busybox /data/local/tmp/busybox
-	adb push rageagainstthecage-arm5.bin /data/local/tmp/rage
 
 root: push	
 	adb shell 'chmod 777 /data/local/tmp/run-as'
