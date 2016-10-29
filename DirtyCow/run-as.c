@@ -25,5 +25,6 @@ int main(int argc, char **argv)
   }
 
   printf("uid %d\n", getuid());
+  system("su");
   return 0;
 }
