@@ -2,7 +2,7 @@
 Repo For Working on Dirty Cow Based Android Root Method    
 Currently Linux Only    
     
-Should Spawn a root shell on device
+Should Spawn a root shell on device  
 Usage sudo make root  
 Output:  
 [*] mmap 0xb6f00000  
