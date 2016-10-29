@@ -16,5 +16,6 @@ adb shell /system/bin/run-as
 running as uid 2000  
 uid 0  
 root@ZTE-V811:/ #
-
+  
+Tested On Android Kitkat 4.4  
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
