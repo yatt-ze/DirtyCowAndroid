@@ -1,6 +1,7 @@
 # DirtyCowAndroid
 Repo For Working on Dirty Cow Based Android Root Method    
 Currently Linux Only    
+Youtube: https://www.youtube.com/watch?v=bzrRWfDOQcM  
     
 Should Spawn a root shell on device  
 Usage sudo make root  
