@@ -25,6 +25,7 @@ int main(int argc, char **argv)
   }
 
   printf("uid %d\n", getuid());
+  printf("Entering Root Shell\n");
   system("su");
   return 0;
 }
