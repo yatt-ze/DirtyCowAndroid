@@ -19,6 +19,6 @@ uid 0
 root@ZTE-V811:/ #
   
 ##Bugs / Problems  
-Testing Branch Not Tested, branch contains a makefile update to compile on multiple devices
+Testing Branch Not Tested, branch contains a makefile update to compile on multiple architectures 
   
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
