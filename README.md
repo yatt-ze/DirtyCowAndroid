@@ -18,16 +18,7 @@ running as uid 2000
 uid 0  
 root@ZTE-V811:/ #
   
-Tested On Android Kitkat 4.4  
 ##Bugs / Problems  
-1)  
-  System Will Hang If You Exec a command on spawned shell  
-  Temp Fix: Exit Back to Terminal and type  
-  1) adb shell  
-  2) run-as  
-  Going adb shell run-as will produce the hang  
-2) 
-  Android 5 (Samsung Galaxy S4)  
-  setresgid/setresuid failed  
+Testing Branch Not Tested, branch contains a makefile update to compile on multiple devices
   
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
