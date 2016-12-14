@@ -28,6 +28,7 @@ Tested On Android Kitkat 4.4
   Going adb shell run-as will produce the hang  
 2) 
   Android 5 (Samsung Galaxy S4)  
-  setresgid/setresuid failed  
-  
+  setresgid/setresuid failed
+3)
+  Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap devices.
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
