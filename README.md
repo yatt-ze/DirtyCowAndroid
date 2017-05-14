@@ -20,13 +20,14 @@ root@ZTE-V811:/ #
   
 ##Bugs / Problems  
 1)  
-  System Will Hang If You Exec a command on spawned shell  
-  Temp Fix: Exit Back to Terminal and type  
-  1) adb shell  
-  2) run-as  
-  Going adb shell run-as will produce the hang  
+  System Will Hang If You Exec a command on spawned shell Temp Fix: Exit Back to Terminal and type  
+  "adb shell"  
+  "run-as"  
+  Going "adb shell run-as" will produce the hang  
 2) 
   Android 5 (Samsung Galaxy S4)  
-  setresgid/setresuid failed
-3) Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap devices. 
+  setresgid/setresuid failed  
+  
+3) 
+    Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap       devices. 
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
