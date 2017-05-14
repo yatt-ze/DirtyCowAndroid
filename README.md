@@ -18,7 +18,6 @@ running as uid 2000
 uid 0  
 root@ZTE-V811:/ #
   
-Tested On Android Kitkat 4.4  
 ##Bugs / Problems  
 1)  
   System Will Hang If You Exec a command on spawned shell  
@@ -29,7 +28,5 @@ Tested On Android Kitkat 4.4
 2) 
   Android 5 (Samsung Galaxy S4)  
   setresgid/setresuid failed
-  
-3)
-  Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap devices.
+3) Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap devices. 
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
