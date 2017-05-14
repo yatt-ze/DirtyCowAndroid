@@ -30,4 +30,5 @@ root@ZTE-V811:/ #
   
 3) 
     Incompatible with devices with system partitions made read-only by the _hardware_, such as the DigiLand DL718M and other supercheap       devices. 
+   
 Oringal PoC Code: https://github.com/timwr/CVE-2016-5195
